@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
     peliculas.getPopulares();
 
     return Scaffold(
+      backgroundColor: Colors.grey[300],
       appBar: AppBar(
         title: Text('Peliculas'),
         backgroundColor: Colors.indigoAccent,
