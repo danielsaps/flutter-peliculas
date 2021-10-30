@@ -20,8 +20,6 @@ class PeliculaDetalle extends StatelessWidget {
             ),
             _posterTitulo(context, pelicula),
             _descripcion(pelicula),
-            _descripcion(pelicula),
-            _descripcion(pelicula),
             _mostrarCasting(pelicula),
           ]),
         ),
@@ -160,9 +158,26 @@ class PeliculaDetalle extends StatelessWidget {
               ),
             ),
           ),
-          Text(
-            "${actor.name}",
-            overflow: TextOverflow.ellipsis,
+          Container(
+            child: Column(
+              children: [
+                SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  "${actor.character}",
+                  overflow: TextOverflow.ellipsis,
+                ),
+                SizedBox(
+                  height: 1,
+                ),
+                Text(
+                  "${actor.name}",
+                  style: TextStyle(fontSize: 12),
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
+            ),
           )
         ],
       ),
