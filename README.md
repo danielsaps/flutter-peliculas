@@ -1,10 +1,8 @@
 # peliculas
 
-A new Flutter project.
+Para correr el proyecto se debe de correr el siguiente comando para instalar los paquetes
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
+		flutter pub get
 
 A few resources to get you started if this is your first Flutter project:
 
